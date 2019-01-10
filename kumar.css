@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Lato', sans-serif;
+    background-color:#404b61;
+}
+.backgroundview{
+margin:20px;
+    max-width:100%;
+    height:712px;
+    background-image:url(images/final.png);
+   background-size: cover;
+    box-shadow: 2px 2px 90px black;
+    border-radius:12px;
+}
+li{ position:relative;
+    top:-50;
+    right:12;
+    list-style-type: none;
+    display:inline-block;
+    float:right;
+    padding-left:100px;  
+    
+    
+}
+li a{
+    text-decoration:none;
+    font-size:20px;
+        color:gold;
+}
+li a:hover{
+    color:white;
+    text-shadow:2px 2px 120px white;
+}
+
+.navi{width: auto;
+    height:70px; 
+}
+nav{
+    position: absolute;
+    top:20px;
+    right:20px;
+}
+
+.navi{
+    background-color: #637a8e;
+    opacity: .5;
+    border-style: none; 
+}
+.fab{
+    color:gold;
+    margin:16px;
+    font-size:32px;
+   
+    
+}
+.fab:hover{
+    color:white;    
+}
+.socialmedia{
+   margin-left:165px;
+    bottom:70;
+    left:70; 
+    position:absolute;
+}
+
+.textview{
+    position:absolute;
+    top:50%;
+    left:11%;
+    margin:auto;
+}
+h1{
+   
+    color:white;
+    font-size: 64px;
+    text-transform: capitalize;
+    letter-spacing:4px;
+    animation-name: moveInleft;
+    animation-delay: 0.4s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    backface-visibility: hidden;
+    
+    
+}
+h3{ position: relative;
+    color:gold;
+    text-transform:capitalize;
+    letter-spacing: 9px;
+    bottom:35px;
+    left:40px;
+    
+    animation-name: moveInright;
+    animation-delay: .4s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    backface-visibility: hidden;
+}
+hr{
+    position:relative;
+    top:-32px;
+    
+}
+.next{
+    height:110px;
+   max-width:100%;
+    margin:2px solid red;
+    box-shadow: 2px 2px 90px black;
+    margin:20px;
+    overflow:hidden;
+}
+.port,a {
+    color: white;
+    text-align:center;
+    text-decoration: none;
+    font-size: 34px;
+    font-weight: bolder;
+  }
+.port a :hover{
+    box-shadow: 2px 2px 12px gold;
+}
+
+@keyframes moveInleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    
+    80%{
+        transform: translateX(10px);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveInright{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    
+    80%{
+        transform: translateX(-10px);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
